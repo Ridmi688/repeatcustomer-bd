@@ -1,0 +1,6 @@
+{
+  "name": "RepeatCustomer BD - Re-Order Campaign Generator",
+  "description": "Smart re-order campaign and win-back message generator for Bangladeshi e-commerce and F-commerce brands using Gemini 3.8 Flash, automated WhatsApp 1-tap links, and telecom Bulk SMS exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

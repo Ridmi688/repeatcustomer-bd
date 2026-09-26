@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RepeatCustomer BD - Re-Order Campaign Generator</title>
+    <meta name="description" content="Smart re-order campaign and win-back message generator for Bangladeshi e-commerce and F-commerce brands using Gemini 3.8 Flash, automated WhatsApp 1-tap links, and telecom Bulk SMS exports." />
+    <meta property="og:title" content="RepeatCustomer BD - Re-Order Campaign Generator" />
+    <meta property="og:description" content="Smart re-order campaign and win-back message generator for Bangladeshi e-commerce and F-commerce brands using Gemini 3.8 Flash, automated WhatsApp 1-tap links, and telecom Bulk SMS exports." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Fix for "Cannot set property fetch of #<Window> which has only a getter"
+      (function() {
+        try {
+          var realFetch = window.fetch;
+          Object.defineProperty(window, 'fetch', {
+            get: function() { return realFetch; },
+            set: function(v) { realFetch = v; },
+            configurable: true,
+            enumerable: true
+          });
+          if (window.Window && window.Window.prototype) {
+            Object.defineProperty(window.Window.prototype, 'fetch', {
+              get: function() { return realFetch; },
+              set: function(v) { realFetch = v; },
+              configurable: true,
+              enumerable: true
+            });
+          }
+        } catch (e) {}
+
+        window.addEventListener('error', function(event) {
+          if (event && event.message && event.message.indexOf('fetch') !== -1 && event.message.indexOf('getter') !== -1) {
+            event.preventDefault();
+            event.stopImmediatePropagation();
+            return true;
+          }
+        }, true);
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-slate-50 text-slate-900 antialiased font-sans selection:bg-emerald-100 selection:text-emerald-900 min-h-screen">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
